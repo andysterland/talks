@@ -1,0 +1,432 @@
+﻿<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=11" /> 
+
+		<title>F12 - The IE Developer Tools</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="stylesheet" href="revealJS/css/reveal.min.css" />
+		<link rel="stylesheet" href="revealJS/css/theme/default.css" id="theme"/>
+        
+		<style>
+			.browserLogo{
+				background: none !important;
+				border: none !important;
+				box-shadow: none !important;
+			}
+
+			.sublist li{
+				font-size: 0.5em !important;
+				height: 2em !important;
+				margin: 0;
+				padding: 0;
+			}
+
+			.footnote {
+				font-size: normal !important;
+				position: absolute !important;
+				bottom: 0 !important;
+				left: 20px !important;
+			}
+
+			.demoContainer{
+				margin-top: 80px !important;
+				display: -ms-flexbox;
+				-ms-flex-direction: horizontal;
+			}
+
+			.demoMarkup{
+				text-align: left;
+			}
+
+			.demoPoints{
+				text-align: right;
+			}
+
+			.demoFrame {
+				width: 400px;
+				height: 400px;
+			}
+
+
+			.ieLogo{
+				position: fixed;
+				top: 10px;
+				right: 10px;
+				width: 129px;
+				height: 40px;
+				background: none !important;
+				border: none !important;
+				box-shadow: none !important;
+
+			}
+
+			.newLogo{
+				position: fixed;
+				top: 10px;
+				right: 10px;
+				width: 129px;
+				height: 80px;
+				background: none !important;
+				border: none !important;
+				box-shadow: none !important;
+
+			}
+
+			.heart{
+				color: red;
+			}
+
+			.bingoList{
+				text-align: left;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+				<section>
+					<h1>Debugging</h1>
+				</section>
+
+<!--
+                <section>
+                    <h2></h2>
+                    <h4></h4>
+                    <div></div>
+					<div class="demoContainer">
+						<div class="demoMarkup">
+							<iframe class="demoFrame" src="demos/.html"></iframe>
+						</div>
+						<div class="demoPoints">
+							<ul>
+		                        <li></li>
+							</ul>
+						</div>
+					</div>
+                </section>
+-->
+                <section>
+                    <h2>Debugger DOM <span class="heart">♥</span> Explorer</h2>
+                    <h4>Debugger working with CSS files</h4>
+                    <div></div>
+					<div class="demoContainer">
+						<div class="demoMarkup">
+							<iframe class="demoFrame" src="Demos/SASS/SimpleSASS.html"></iframe>
+						</div>
+						<div class="demoPoints">
+							<ul>
+		                        <li>Source mapped links in the DOM Explorer</a></li>
+		                        <li>Source mapped CSS (LESS/SASS etc.)</li>
+		                        <li>Pretty print for HTML and CSS</li>
+							</ul>
+						</div>
+					</div>
+					<img class="newLogo" src="resources/new.png"/>
+                </section>
+
+
+				<section>
+					<h2>Just My Code</h2>
+					<h4>Never debug 3rd party code</h4>
+					<div class="demoContainer">
+						<div class="demoMarkup">
+							<iframe class="demoFrame" src="Demo.Debugger.JMC.html"></iframe>
+						</div>
+						<div class="demoPoints">
+							<ul>
+								<li>Step only in your own code</li>
+								<li>Break in caught exceptions in your code only</li>
+								<li>Break next in your code</li>
+								<li>Mark your files:<ul class="sublist">
+									<li>File picker, tab header, MyCode.json</li>
+								</ul>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>TracePoints</h2>
+					<h4>Instrument code without having to redeploy it</h4>
+					<div class="demoContainer">
+						<div class="demoMarkup">
+							<iframe class="demoFrame" src="Demo.Debugger.TracePoints.html"></iframe>
+						</div>
+						<div class="demoPoints">
+							<ul>
+								<li>Work like breakpoints but log to the console</li>
+								<li>Log strings, objects and inspect in the console</li>
+								<li>Access to locals</li>
+								<li>Also works for events...</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+                <section>
+                    <h2>New source nav</h2>
+                    <h4>(Works best with TypeScript!)</h4>
+                    <div></div>
+					<div class="demoContainer">
+						<div class="demoMarkup">
+							<iframe class="demoFrame" src="demos/FindRefs/FindRefs.html"></iframe>
+						</div>
+						<div class="demoPoints">
+							<ul>
+		                        <li>Find references</li>
+		                        <li>Go to defination</li>
+							</ul>
+						</div>
+					</div>
+					<img class="newLogo" src="resources/new.png"/>
+                </section>
+
+
+                <section>
+                    <h2>Improved debugging</h2>
+                    <h4></h4>
+                    <div></div>
+					<div class="demoContainer">
+						<div class="demoMarkup">
+							<iframe class="demoFrame" src="demos/XHRBreakpoints/SimpleXhr.html"></iframe>
+						</div>
+						<div class="demoPoints">
+							<ul>
+		                        <li>Xhr breakpoints</li>
+		                        <li>addEventListener Async instrumentation</li>
+							</ul>
+						</div>
+					</div>
+					<img class="newLogo" src="resources/new.png"/>
+                </section>
+
+						
+				<section>
+					<h1>Profiling</h1>
+				</section>
+
+				<section>
+					<h2>Heads Up Display</h2>
+					<h3>Monitor performance in real time</h3>
+					<br />
+					<img class="browserLogo" src="resources/ctrlshiftu.png"/>
+					<br />
+					<br/>
+					<h3>(ctrl + shift + u)</h3>
+					<a href="http://www.huffingtonpost.com/" target="_blank">(slow site)</a>
+				</section>
+
+				<section>
+					<h2>Profiling - UI</h2>
+					<div></div>
+					<div class="demoContainer">
+						<div class="demoMarkup">
+							<iframe class="demoFrame" src="demos/Perf/Perf.html"></iframe>
+						</div>
+						<div class="demoPoints">
+							<ul>
+								<li>DOM Explorer integration</li>
+								<li>Async call stacks</li>
+							</ul>
+						</div>
+					</div>
+					<img class="newLogo" src="resources/new.png"/>
+				</section>	
+
+				<section>
+					<h1>Network Inspection</h1>
+				</section>
+
+				<section>
+					<h1>F12 Chooser</h1>
+				</section>
+
+				<section>
+					<h2>F12 Chooser</h2>
+					<div>A tool to debug IE wherever it may be</div>
+					<ul>
+						<li>Stand alone exe in the Program Files/Internet Explorer/F12Chooser.exe</li>
+						<li>Used to launch the F12 tools against IE, works against:
+							<ul class="sublist">
+								<li>Native apps hosting a WebOCs</li>
+								<li>Managed apps using the .net browser control (WinForms, WPF, etc.)</li>
+								<li>HTA</lI>
+								<li>IE</li>
+							</ul>
+						</li>
+						<li>All the tools are the same as when F12 is launched against IE</ie>
+					</ul>
+					<img class="newLogo" src="resources/new.png"/>
+				</section>
+
+
+                <section>
+                    <h2>Debugger</h2>
+                    <h4>New Features For Windows 10 Bingo Card</h4>
+                    <div class="bingoList">
+	                    <ul>
+	                        <li>Per file commands</li>
+	                        <li>Copy location context menu</li>
+	                        <li>Selected word matching</li>
+	                        <li>CSS and HTML pretty printing</li>
+	                        <li>addEventListener async stacks</li>
+	                        <li>Find references</li>
+	                        <li>Go to definiation</li>
+	                        <li>Per statement object literal breaks</li>
+	                        <li>Xhr breakpoints</li>
+	                    </ul>
+                	</div>
+                </section>
+
+				<section>
+					<h2>Conclusion</h2>
+					<div>
+						<ul>
+							<li>Big bets on
+								<ul class="sublist">
+									<li>New network tool</li>
+									<li>VS converged script profiler</li>
+									<li>Sourcemaps</li>
+								</ul>
+							</li>
+							<li>Plus lots of smaller improvements to all the tools</li>
+							<li>As always we demand your feedback
+								<ul class="sublist">
+									<li>@IEDevChat</li>
+									<li>Internal DL f12dog</li>
+									<li>User voice (wpdev.uservoice.com)</li>
+								</ul></li>
+
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h1>New Features For Windows 10 Bingo Card</h1>
+				</section>
+
+                <section>
+                    <h2>Debugger</h2>
+                    <h4>New Features For Windows 10 Bingo Card</h4>
+                    <div class="bingoList">
+	                    <ul>
+	                        <li>Per file commands</li>
+	                        <li>Copy location context menu</li>
+	                        <li>Selected word matching</li>
+	                        <li>CSS and HTML pretty printing</li>
+	                        <li>addEventListener async stacks</li>
+	                        <li>Find references</li>
+	                        <li>Go to definiation</li>
+	                        <li>Per statement object literal breaks</li>
+	                        <li>Xhr breakpoints</li>
+	                    </ul>
+                	</div>
+                </section>
+
+                <section>
+                    <h2>DOM Explorer</h2>
+                    <h4>New Features For Windows 10 Bingo Card</h4>
+                    <div class="bingoList">
+	                    <ul>
+	                        <li>Sourcemap support in style links</li>
+	                        <li></li>
+	                    </ul>                    	
+                	</div>
+                </section>
+
+                <section>
+                    <h2>Console</h2>
+                    <h4>New Features For Windows 10 Bingo Card</h4>
+                    <div class="bingoList">
+	                    <ul>
+	                        <li>Network errors</li>
+	                        <li>DOM Explrer integration</li>
+	                    </ul>                    	
+                	</div>
+                </section>
+
+                <section>
+                    <h2>Header</h2>
+                    <h4>New Features For Windows 10 Bingo Card</h4>
+                    <div class="bingoList">
+	                    <ul>
+	                        <li>Send feedback</li>
+	                        <li>ctrl+r reload shortcut</li>
+	                    </ul>                    	
+                	</div>
+                </section>
+
+                <section>
+                    <h2>Emulation</h2>
+                    <h4>New Features For Windows 10 Bingo Card</h4>
+                    <div class="bingoList">
+	                    <ul>
+	                        <li>Switching between legacy and edge engine</li>
+	                        <li>Updated UA strings</li>
+	                    </ul>                    	
+                	</div>
+                </section>
+
+                <section>
+                    <h2>Memory</h2>
+                    <h4>New Features For Windows 10 Bingo Card</h4>
+                    <div class="bingoList">
+	                    <ul>
+	                        <li>Sourcemap support</li>
+	                        <li>DOM Explorer integration</li>
+	                    </ul>                    	
+                	</div>
+                </section>
+
+                <section>
+                    <h2>UI Responsiveness</h2>
+                    <h4>New Features For Windows 10 Bingo Card</h4>
+                    <div class="bingoList">
+	                    <ol>
+	                        <li>Sourcemap support in style links</li>
+	                        <li></li>
+	                    </ol>                    	
+                	</div>
+                </section>
+
+                <section>
+                    <h2>Script Profiler</h2>
+                    <h4>New Features For Windows 10 Bingo Card</h4>
+                    <div class="bingoList">
+	                    <ol>
+	                        <li>Brand new tool from VS</li>
+	                        <li>CPU sampling based == much more accurate</li>
+	                        <li>Old tool removed</li>
+	                    </ol>                    	
+                	</div>
+                </section>
+           </div>
+
+		</div>
+
+		<script src="revealJS/lib/js/head.min.js"></script>
+		<script src="revealJS/js/reveal.min.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				transition: 'linear',
+				progress: true,
+				history: true,
+				overview: true
+			});
+
+		</script>
+
+	</body>
+</html>

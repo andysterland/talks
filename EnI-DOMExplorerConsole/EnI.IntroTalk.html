@@ -1,0 +1,273 @@
+﻿<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>F12 - The IE Developer Tools</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="stylesheet" href="revealJS/css/reveal.min.css" />
+		<link rel="stylesheet" href="revealJS/css/theme/default.css" id="theme"/>
+        
+		<style>
+			.browserLogo{
+				background: none !important;
+				border: none !important;
+				box-shadow: none !important;
+			}
+
+            .smallFont {
+                font-size: small;
+            }
+
+			.sublist li{
+				font-size: 0.5em !important;
+				height: 2em !important;
+				margin: 0;
+				padding: 0;
+			}
+
+			.footnote {
+				font-size: normal !important;
+				position: absolute !important;
+				bottom: 0 !important;
+				left: 20px !important;
+			}
+
+			.demoContainer{
+				margin-top: 80px !important;
+				display: -ms-flexbox;
+				-ms-flex-direction: horizontal;
+			}
+
+			.demoMarkup{
+				text-align: left;
+			}
+
+			.demoPoints{
+				text-align: right;
+			}
+
+			.demoFrame {
+				width: 400px;
+				height: 400px;
+			}
+
+			.ieLogo{
+				position: fixed;
+				top: 10px;
+				right: 10px;
+				width: 129px;
+				height: 40px;
+				background: none !important;
+				border: none !important;
+				box-shadow: none !important;
+
+			}
+
+			.newLogo{
+				position: fixed;
+				top: 60px;
+				right: 10px;
+				width: 129px;
+				height: 80px;
+				background: none !important;
+				border: none !important;
+				box-shadow: none !important;
+
+			}
+		</style>
+	</head>
+
+	<body>
+
+
+		<div class="reveal">
+
+			<div class="slides">
+				<section>
+                    <h2>DOM Explorer and Console</h2>
+					<br />	
+					<img class="browserLogo" src="resources/IEandF12.png"/>
+					<br />
+					<h2>A quick tour</h2>
+					<br />
+				</section>
+                
+
+                <section>
+                    <h2>Ask me anything!</h2>
+                    <p>For the love of everything that is sacred please ask questions!</p>
+                    <div class="smallFont">Though I'm no longer the PM for the tools.</div>
+                    <div>Jonathan covers the DOM Explorer</div>
+                    <div>David covers the console.</div>
+                </section>
+
+                <section>
+                    <h1>DOM Explorer</h1>
+                </section>
+
+				<section>
+					<h2>What and Why</h2>
+					<ul>
+                        <li>The goal
+                        <p>To provide insight into the magically black box that is the browser so that developers can understand and diagnose issues in their app</p>
+                        </li>
+                        <li>Why is it needed?
+                        <p>It’s needed because no sane person on this planet can rationalize how HTML & CSS will actually look once it’s rendered so naturally the only sane option is trial and error</p>
+                        </li>
+                    </ul>
+				</section>	
+
+				<section>
+					<h2>DOM Explorer Basic Demo</h2>
+					<h4></h4>
+					<ul>
+                        <li>Go to any website (like <a href="http://msn.com">msn.com</a>)</li>
+                        <li>Tree inspection</li>
+                        <li>Style inspection</li>
+                    </ul>
+				</section>	
+
+                <section>
+                    <h2>DOM Explorer Changebars Demo</h2>
+                    <h4>Keep track of changes for F12</h4>
+                    <div class="demoContainer">
+                        <div class="demoMarkup">
+                            <iframe class="demoFrame" src="http://bptfs1/sites/current/vsietools/F12/Debugger/SourceMaps/CssSourceMaps/employee_typescript.html"></iframe>
+                        </div>
+                        <div class="demoPoints">
+                            <ul>
+                                <li>Keep track of all the CSS changes you make through the tools</li>
+                                <li>New "Changes" tab show all the changes</li>
+                                <li>Revert the item back to it's original state</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section>
+                    <h2>DOM Explorer Sourcemap Support Demo</h2>
+                    <h4>Sourcemaps</h4>
+                    <div class="demoContainer">
+                        <div class="demoMarkup">
+                            <iframe class="demoFrame" src="Demo.DOMExplorer.changebars.html"></iframe>
+                        </div>
+                        <div class="demoPoints">
+                            <ul>
+                                <li>Events translated</li>
+                                <li>Locations in Styles translated</li>
+                                <li>Open LESS/SASS documents</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>What's left</h2>
+                    <br />
+                    <div>Bucket #1: The little things that nag you and sometimes block you</div>
+                    <ul>
+                        <li>Don’t support certain CSS constructs e.g. :before</li>
+                        <li>Missing some simple feature copy image (etc.)</li>
+                    </ul>
+
+                    <div>Bucket #2: Languages & Libraries</div>
+                    <ul>
+                        <li>Developers don’t just write CSS they write LESS and SAS</li>
+                        <li>Developers don’t just write vanilla they use bootstrap, jQuery and a truck load of stuff</li>
+                    </ul>
+
+                    <div>Bucket #3: Innovation (especially in layout)</div>
+                    <ul>
+                        <li>The DOM Explorer is stuck in the CSS2 box model world – the mobile web is not</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Questions?</h2>
+                </section>
+
+
+                <section>
+                    <h1>JavaScript Console</h1>
+                </section>
+
+                <section>
+                    <h2>What &amp; Why</h2>
+                    <ul>
+                        <li>
+                            The goal:
+                            <p>To provide the developer a playground to inspect and modify the state of their application.</p>
+                            <p>To provide the developer with actionable ‘to do list’ when things go wrong with their site.</p>
+                            <p>To enable the developer to instrument their applications so they can better understand where it all went wrong</p>
+                        </li>
+
+                        <li>
+                        Why is it needed:
+                        <p>Cause ‘aint no one written perfect code</p>
+                        </li>
+                    </ul>
+                </section>
+
+				<section>
+					<h2>Never miss a console message</h2>
+					<h4>Turn on "Always record console messages"</h4>
+					<img class="browserLogo" src="resources/inetcpl-console.png"/>
+					<div>Internet Options -> Advanced -> Browsing -> Always Record Console Messages (check)</div>
+					<a href="Demo.console.broken.html" target="_blank">(broken site)</a>
+				</section>
+
+				<section>
+					<h2>Instrumenting Your Code</h2>
+					<h3>Use the console.* API to </h3>
+					<br />
+					
+					<div class="demoContainer">
+						<div class="demoMarkup">
+							<iframe class="demoFrame" src="Demo.Console.instrument.html"></iframe>
+						</div>
+						<div class="demoPoints">
+							<ul>
+								<li>console.time/timeEnd - to quickly time scenarios</li>
+								<li>performance.mark - to delineate scenarios in the profiler</li>
+								<li>console.takeHeapSnapshot - to take a snapshot</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+                
+                <section>
+                    <h2>Never miss a console message</h2>
+                    <h4>Turn on "Always record console messages"</h4>
+                    <img class="browserLogo" src="resources/inetcpl-console.png" />
+                    <div>Internet Options -> Advanced -> Browsing -> Always Record Console Messages (check)</div>
+                    <a href="Demo.console.broken.html" target="_blank">(broken site)</a>
+                </section>
+
+				<section>
+					<h2>Questions?</h2>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="revealJS/lib/js/head.min.js"></script>
+		<script src="revealJS/js/reveal.min.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				transition: 'linear',
+				progress: true,
+				history: true,
+				overview: true
+			});
+
+		</script>
+
+	</body>
+</html>

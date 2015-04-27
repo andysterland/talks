@@ -1,0 +1,9 @@
+C:\src\Talks\2014-Build-F12\WinFormsApp\WindowsFormsApplication1\bin\x86\Debug\WindowsFormsApplication1.exe.config
+C:\src\Talks\2014-Build-F12\WinFormsApp\WindowsFormsApplication1\bin\x86\Debug\WindowsFormsApplication1.exe
+C:\src\Talks\2014-Build-F12\WinFormsApp\WindowsFormsApplication1\bin\x86\Debug\WindowsFormsApplication1.pdb
+C:\src\Talks\2014-Build-F12\WinFormsApp\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\src\Talks\2014-Build-F12\WinFormsApp\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\src\Talks\2014-Build-F12\WinFormsApp\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\src\Talks\2014-Build-F12\WinFormsApp\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\src\Talks\2014-Build-F12\WinFormsApp\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\src\Talks\2014-Build-F12\WinFormsApp\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb

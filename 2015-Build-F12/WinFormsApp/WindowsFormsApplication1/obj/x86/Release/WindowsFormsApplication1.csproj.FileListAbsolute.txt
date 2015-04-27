@@ -1,0 +1,8 @@
+C:\src\Talks\2014-Build-F12\WinFormsApp\WindowsFormsApplication1\bin\x86\Release\WindowsFormsApplication1.exe.config
+C:\src\Talks\2014-Build-F12\WinFormsApp\WindowsFormsApplication1\bin\x86\Release\WindowsFormsApplication1.exe
+C:\src\Talks\2014-Build-F12\WinFormsApp\WindowsFormsApplication1\bin\x86\Release\WindowsFormsApplication1.pdb
+C:\src\Talks\2014-Build-F12\WinFormsApp\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Form1.resources
+C:\src\Talks\2014-Build-F12\WinFormsApp\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.Properties.Resources.resources
+C:\src\Talks\2014-Build-F12\WinFormsApp\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\src\Talks\2014-Build-F12\WinFormsApp\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.exe
+C:\src\Talks\2014-Build-F12\WinFormsApp\WindowsFormsApplication1\obj\x86\Release\WindowsFormsApplication1.pdb

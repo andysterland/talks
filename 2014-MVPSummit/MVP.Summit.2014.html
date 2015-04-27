@@ -1,0 +1,320 @@
+﻿<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+
+		<title>F12 - MVP 2014 Summit</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="stylesheet" href="revealJS/css/reveal.min.css" />
+		<link rel="stylesheet" href="revealJS/css/theme/default.css" id="theme"/>
+        
+		<style>
+			.browserLogo{
+				background: none !important;
+				border: none !important;
+				box-shadow: none !important;
+			}
+
+            .smallFont {
+                font-size: small;
+            }
+
+			.sublist li{
+				font-size: 0.5em !important;
+				height: 2em !important;
+				margin: 0;
+				padding: 0;
+			}
+
+			.footnote {
+				font-size: normal !important;
+				position: absolute !important;
+				bottom: 0 !important;
+				left: 20px !important;
+			}
+
+			.demoContainer{
+				margin-top: 80px !important;
+				display: -ms-flexbox;
+				-ms-flex-direction: horizontal;
+			}
+
+			.demoMarkup{
+				text-align: left;
+			}
+
+			.demoPoints{
+				text-align: right;
+			}
+
+			.demoFrame {
+				width: 400px;
+				height: 400px;
+			}
+
+			.ieLogo{
+				position: fixed;
+				top: 10px;
+				right: 10px;
+				width: 129px;
+				height: 40px;
+				background: none !important;
+				border: none !important;
+				box-shadow: none !important;
+
+			}
+
+			.newLogo{
+				position: fixed;
+				top: 60px;
+				right: 10px;
+				width: 129px;
+				height: 80px;
+				background: none !important;
+				border: none !important;
+				box-shadow: none !important;
+
+			}
+
+            #confidential{
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                font-size: small;
+            }
+		</style>
+	</head>
+
+	<body>
+
+
+		<div class="reveal">
+            <div id="confidential">Microsoft Confidential</div>
+			<div class="slides">
+				<section>
+                    <h2>F12 Developer Tools</h2>
+					<br />
+					<img class="browserLogo" src="resources/IEandF12.png"/>
+					<br />
+                    <br />
+					<h2>MVP Summit 2014</h2>
+					<br />
+                    <h3>Andy Sterland / @andysterland</h3>
+                    <h3>andy.sterland@microsoft.com</h3>
+				</section>
+
+                <section>
+                    <h2>Agenda</h2>
+                    <br />
+                    <ul>
+                        <li>Recap of added features</li>
+                        <li>Demo of new feautres</li>
+                        <li>How to engage with us</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Ask me anything!</h2>
+                    <p>For the love of everything, please ask questions!</p>
+                </section>
+
+                <section>
+                    <h2>Recap since IE11 RTM</h2>
+                    <ul>
+                        <li>F12 had two big updates since RTM
+                            <ul class="sublist">
+                                <li>April - Changebars, Just My Code</li>
+                                <li>August - Event bps, Async</li>
+                            </ul>
+                        </li>
+                        <li>What next...
+                            <ul class="sublist">
+                                <li>Working on IE for Win10</li>
+                                <li>Feautres will be shipping in Windows previews</li>
+                                <li>No word on when we'll be shipping though :)</li>
+                                <li>Demos...</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>New Navigation</h2>
+                    <h4>Changing the navigation to be a more tradational (horizontal) tab header</h4>
+                    <ul>
+                        <li>Navigation along the top</li>
+                        <li>Removing icons</li>
+                        <li>Overflow for items in drop down</li>
+                        <li>We're aiming for this to go out as an update to IE11 (not just Win10)</li>
+                    </ul>
+                    <div>Now onto future updates...</div>
+                </section>
+
+                <section>
+                    <h2>Network Tool</h2>
+                    <h4>Brand new network tool! (Not demoable - just yet)</h4>
+                    <ul>
+                        <li>Removing the old network inspector (no network tool in this build)</li>
+                        <li>First goal: Parity, addressing top issues and then to infinity and beyound</li>
+                        <li>
+                            Ruben Rios and Jonathan Carter are your guys
+                            <ul>
+                                <li>RuRios@Micrsoft.com</li>
+                                <li>JonCart@Microsoft.com</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Perf Tools <span style="color:red; font-weight:bolder; font-size:2em;">&hearts;</span> DOM Explorer</h2>
+                    <h4><a href="http://bptweb01/TweetORamaDemo/" target="_blank">(demo)</a></h4>
+                    <ul>
+                        <li>Profile and use the DOM Explorer and we'll filter, out, junk out</li>
+                        <li>View overlays on the page when selecting elements in the perf tools</li>
+                        <li>Jump from an element in the perf tools to the DOM Explorer</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Debugger - Improvements</h2>
+                    <h4>Whole bunch of improvements to the debugger</h4>
+                    <ul>
+                        <li>XHR Breakpoints <a href="http://bptweb01/talks/2014-MVPSummit/Demos/XHRBreakpoints/SimpleXhr.html" target="_blank">(demo)</a></li>
+                        <li>Find references and go to definition (works best for TypeScript) <a href="http://bptweb01/talks/2014-MVPSummit/Demos/FindRefs/FindRefs.html" target="_blank">(demo)</a></li>
+                        <li><strong>LIVE EDITING</strong> <a href="http://bptweb01/talks/2014-MVPSummit/Demos/XHRBreakpoints/SimpleXhr.html" target="_blank">(demo)</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Debugger - Source map locals</h2>
+                    <h4></h4>
+                    <div><a href="https://gist.github.com/asterland/edf028ed7947c8c258d1" target="_blank">spec proposal</a>   <a href="http://bptweb01/talks/2014-MVPSummit/Demos/SourceMapLocals/example.html">demo</a></div>
+                    <ul>
+                        <li>Working on an idea to source maps to resolve symbols (prototype in F12 and the TypeScript compiler)</li>
+                        <li>Goal is to work with the spec authors and gain wide adoption</li>
+                        <li>Would love feedback </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Debugger &gt; Script</h2>
+                    <h4>Debugger working with persisted local data</h4>
+                    <div><a href="http://html5demos.com/storage" target="_blank">(storage demo)</a> <a href="http://www.cnn.com" target="_blank">(cookie demo)</a></div>
+                    <ul>
+                        <li>CRUD operations</li>
+                        <li>Storage is per domain</li>
+                        <li>Cookies are per 'page'</li>
+                        <li>IndexedDb is on the backlog (but further down)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Debugger &gt; Script</h2>
+                    <h4>Debugger working with CSS files</h4>
+                    <div></div>
+                    <ul>
+                        <li>CSS in file picker <a href="http://bptweb01/talks/2014-MVPSummit/Demos/PrettyPrint/minified.html" target="_blank">(demo)</a></li>
+                        <li>Follow links (ctrl + click) in source viewer <a href="http://bptweb01/talks/2014-MVPSummit/Demos/PrettyPrint/minified.html" target="_blank">(demo)</a></li>
+                        <li>Pretty print for HTML and CSS <a href="http://bptweb01/talks/2014-MVPSummit/Demos/PrettyPrint/minified.html" target="_blank">(demo)</a> <a href="http://bptweb01/talks/2014-MVPSummit/Demos/PrettyPrint/embedded.html" target="_blank">(embedded)</a></li>
+                        <li>Source mapped CSS (LESS/SASS etc.) <a href="http://bptweb01/talks/2014-MVPSummit/Demos/SASS/SimpleSASS.html" target="_blank">(demo)</a></li>
+                        <li>Editable CSS <a href="http://bptweb01/talks/2014-MVPSummit/Demos/CSSEditing/SimpleCSSPage.html#top" target="_blank">(demo)</a></li>
+                    </ul>
+                </section>
+
+
+                <section>
+                    <h2>What next?</h2>
+                    <h4>(We need your input!)</h4>
+                    <ul>
+                        <li>Making hard problems easier (layout, responsive design)</li>
+                        <li>Working at the developers level of abstraction
+                            <ul class="sublist">
+                                <li>Languages (TypeScript, CoffeeScript, SASS, LESS etc.)</li>
+                                <li>Libraries (jQuery, Angular)</li>
+                            </ul>
+                        </li>
+                        <li>Working out in the open, collaborating on standards</li>
+                    </ul>
+                </section>
+
+
+
+                <section>
+                    <h2>How to engage with us</h2>
+                    <br />
+                    <ul>
+                        <li>User Voice</li>
+                        <li>Skype / email etc.</li>
+                        <li>Windows 10 builds also have a feedback button in F12!</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>User Voice</h2>
+                    <h4></h4>
+                    <ul>
+                        <li><a href="https://wpdev.uservoice.com/forums/257854-internet-explorer-platform/category/84475-f12-developer-tools" target="_blank">https://wpdev.uservoice.com/forums/257854-internet-explorer-platform</a></li>
+                        <li>Lots of feedback
+                            <ul>
+                                <li>~96 items</li>
+                                <li>~1.5k votes</li>
+                            </ul>
+                        </li>
+                        <li>We're working on the top items</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <img src="Resources/UserVoiceNeedsYou.png" />
+                </section>
+
+                <section>
+                    <h2>Questions?</h2>
+                </section>
+
+                <!--
+                <section>
+                    <h2></h2>
+                    <h4></h4>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2></h2>
+                    <h4></h4>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </section>
+                -->
+			</div>
+
+		</div>
+
+		<script src="revealJS/lib/js/head.min.js"></script>
+		<script src="revealJS/js/reveal.min.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				transition: 'linear',
+				progress: true,
+				history: true,
+				overview: true
+			});
+
+		</script>
+
+	</body>
+</html>

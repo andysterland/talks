@@ -1,0 +1,292 @@
+﻿<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=11" /> 
+
+		<title>F12 - The IE Developer Tools</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="stylesheet" href="revealJS/css/reveal.min.css" />
+		<link rel="stylesheet" href="revealJS/css/theme/default.css" id="theme"/>
+        
+		<style>
+			.browserLogo{
+				background: none !important;
+				border: none !important;
+				box-shadow: none !important;
+			}
+
+			.sublist li{
+				font-size: 0.5em !important;
+				height: 2em !important;
+				margin: 0;
+				padding: 0;
+			}
+
+			.footnote {
+				font-size: normal !important;
+				position: absolute !important;
+				bottom: 0 !important;
+				left: 20px !important;
+			}
+
+			.demoContainer{
+				margin-top: 80px !important;
+				display: -ms-flexbox;
+				-ms-flex-direction: horizontal;
+			}
+
+			.demoMarkup{
+				text-align: left;
+			}
+
+			.demoPoints{
+				text-align: right;
+			}
+
+			.demoFrame {
+				width: 400px;
+				height: 400px;
+			}
+
+
+			.ieLogo{
+				position: fixed;
+				top: 10px;
+				right: 10px;
+				width: 129px;
+				height: 40px;
+				background: none !important;
+				border: none !important;
+				box-shadow: none !important;
+
+			}
+
+			.newLogo{
+				position: fixed;
+				top: 10px;
+				right: 10px;
+				width: 129px;
+				height: 80px;
+				background: none !important;
+				border: none !important;
+				box-shadow: none !important;
+
+			}
+
+			.heart{
+				color: red;
+			}
+
+			.bingoList{
+				text-align: left;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+<!--
+                <section>
+                    <h2></h2>
+                    <h4></h4>
+                    <div></div>
+					<div class="demoContainer">
+						<div class="demoMarkup">
+							<iframe class="demoFrame" src="demos/.html"></iframe>
+						</div>
+						<div class="demoPoints">
+							<ul>
+		                        <li></li>
+							</ul>
+						</div>
+					</div>
+                </section>
+-->
+				<section>
+                    <h2>IE’s Developer Tools</h2>
+					<br />	
+					<img class="browserLogo" src="resources/IEandF12.png"/>
+					<br />
+					<h2>Top tips &amp; tricks for debugging the web with IE</h2>
+					<br />
+					<h3><a href="mailto:andy.sterland@microsoft.com">Andy Sterland</a> | <a href="http://microsoft.com/ie">Microsoft</a></h3>
+					<h4><a href="http://twitter.com/">@AndySterland</a> | <a href="mailto:andy.sterland@microsoft.com">andy.sterland@microsoft.com</a></h4>
+				</section>
+
+                <section>
+                    <h2>Debugger <span class="heart">♥</span> DOM Explorer</h2>
+                    <h4>Debugger working with CSS files</h4>
+                    <div></div>
+					<div class="demoContainer">
+						<div class="demoMarkup">
+							<iframe class="demoFrame" src="Demos/SASS/SimpleSASS.html"></iframe>
+						</div>
+						<div class="demoPoints">
+							<ul>
+		                        <li>Source mapped links in the DOM Explorer</a></li>
+		                        <li>Source mapped CSS (LESS/SASS etc.)</li>
+		                        <li>Pretty print for HTML and CSS</li>
+							</ul>
+						</div>
+					</div>
+					<img class="newLogo" src="resources/new.png"/>
+                </section>
+
+
+				<section>
+					<h2>Just My Code</h2>
+					<h4>Never debug 3rd party code</h4>
+					<div class="demoContainer">
+						<div class="demoMarkup">
+							<iframe class="demoFrame" src="Demo.Debugger.JMC.html"></iframe>
+						</div>
+						<div class="demoPoints">
+							<ul>
+								<li>Step only in your own code</li>
+								<li>Break in caught exceptions in your code only</li>
+								<li>Break next in your code</li>
+								<li>Mark your files:<ul class="sublist">
+									<li>File picker, tab header, MyCode.json</li>
+								</ul>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+
+				<section>
+					<h2>TracePoints</h2>
+					<h4>Instrument code without having to redeploy it</h4>
+					<div class="demoContainer">
+						<div class="demoMarkup">
+							<iframe class="demoFrame" src="Demo.Debugger.TracePoints.html"></iframe>
+						</div>
+						<div class="demoPoints">
+							<ul>
+								<li>Work like breakpoints but log to the console</li>
+								<li>Log strings, objects and inspect in the console</li>
+								<li>Access to locals</li>
+								<li>Also works for events...</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+                <section>
+                    <h2>New source nav</h2>
+                    <h4>(Works best with TypeScript!)</h4>
+                    <div></div>
+					<div class="demoContainer">
+						<div class="demoMarkup">
+							<iframe class="demoFrame" src="demos/FindRefs/FindRefs.html"></iframe>
+						</div>
+						<div class="demoPoints">
+							<ul>
+		                        <li>Find references</li>
+		                        <li>Go to defination</li>
+							</ul>
+						</div>
+					</div>
+					<img class="newLogo" src="resources/new.png"/>
+                </section>
+
+
+                <section>
+                    <h2>Improved debugging</h2>
+                    <h4></h4>
+                    <div></div>
+					<div class="demoContainer">
+						<div class="demoMarkup">
+							<iframe class="demoFrame" src="demos/XHRBreakpoints/SimpleXhr.html"></iframe>
+						</div>
+						<div class="demoPoints">
+							<ul>
+		                        <li>Xhr breakpoints</li>
+		                        <li>addEventListener Async instrumentation</li>
+							</ul>
+						</div>
+					</div>
+					<img class="newLogo" src="resources/new.png"/>
+                </section>
+
+						
+				<section>
+					<h1>Profiling</h1>
+				</section>
+
+				<section>
+					<h2>Heads Up Display</h2>
+					<h3>Monitor performance in real time</h3>
+					<br />
+					<img class="browserLogo" src="resources/ctrlshiftu.png"/>
+					<br />
+					<br/>
+					<h3>(ctrl + shift + u)</h3>
+					<a href="http://www.huffingtonpost.com/" target="_blank">(slow site)</a>
+				</section>
+
+				<section>
+					<h2>Profiling - UI</h2>
+					<div></div>
+					<div class="demoContainer">
+						<div class="demoMarkup">
+							<iframe class="demoFrame" src="demos/Perf/Perf.html"></iframe>
+						</div>
+						<div class="demoPoints">
+							<ul>
+								<li>DOM Explorer integration</li>
+								<li>Async call stacks</li>
+							</ul>
+						</div>
+					</div>
+					<img class="newLogo" src="resources/new.png"/>
+				</section>	
+
+				<section>
+					<h1>F12 Chooser</h1>
+				</section>
+
+				<section>
+					<h2>F12 Chooser</h2>
+					<div>A tool to debug IE wherever it may be</div>
+					<ul>
+						<li>Stand alone exe in the Program Files/Internet Explorer/F12Chooser.exe</li>
+						<li>Used to launch the F12 tools against IE, works against:
+							<ul class="sublist">
+								<li>Native apps hosting a WebOCs</li>
+								<li>Managed apps using the .net browser control (WinForms, WPF, etc.)</li>
+								<li>HTA</lI>
+								<li>IE</li>
+							</ul>
+						</li>
+						<li>All the tools are the same as when F12 is launched against IE</ie>
+					</ul>
+					<img class="newLogo" src="resources/new.png"/>
+				</section>
+           </div>
+
+		</div>
+
+		<script src="revealJS/lib/js/head.min.js"></script>
+		<script src="revealJS/js/reveal.min.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				transition: 'linear',
+				progress: true,
+				history: true,
+				overview: true
+			});
+
+		</script>
+
+	</body>
+</html>
