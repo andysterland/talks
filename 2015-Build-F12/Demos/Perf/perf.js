@@ -1,6 +1,7 @@
 $(window).ready(function () {
     $("#go").click(function () {
         $(".box").each(function (index, item) {
+            performance.mark("ExampleScenario-Begin");
             var newTop = Math.random() * $(window).height() - $(item).width();
             var newLeft = Math.random() * $(window).width() - $(item).height();
 
@@ -15,6 +16,8 @@ $(window).ready(function () {
                 "left": newLeft,
                 "background-color": newColorString
             });
+            performance.mark("ExampleScenario-Begin");
+            performance.measure("Example Scenario", "ExampleScenario-Begin", "ExampleScenario-End");
         });
     });
 });
