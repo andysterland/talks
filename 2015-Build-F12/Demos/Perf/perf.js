@@ -16,7 +16,7 @@ $(window).ready(function () {
                 "left": newLeft,
                 "background-color": newColorString
             });
-            performance.mark("ExampleScenario-Begin");
+            performance.mark("ExampleScenario-End");
             performance.measure("Example Scenario", "ExampleScenario-Begin", "ExampleScenario-End");
         });
     });
