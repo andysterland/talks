@@ -1,7 +1,7 @@
 $(window).ready(function () {
     $("#go").click(function () {
+        performance.mark("ExampleScenario-Begin");
         $(".box").each(function (index, item) {
-            performance.mark("ExampleScenario-Begin");
 
             var newTop = Math.random() * $(window).height() - $(item).width();
             var newLeft = Math.random() * $(window).width() - $(item).height();
@@ -19,7 +19,7 @@ $(window).ready(function () {
             });
             
             performance.mark("ExampleScenario-End");
-            performance.measure("Example Scenario", "ExampleScenario-Begin", "ExampleScenario-End");
-        });
+         });    
+         performance.measure("Draw random boxes", "ExampleScenario-Begin", "ExampleScenario-End");
     });
 });
