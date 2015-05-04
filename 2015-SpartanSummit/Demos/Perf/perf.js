@@ -17,9 +17,8 @@ $(window).ready(function () {
                 "left": newLeft,
                 "background-color": newColorString
             });
-            
-            performance.mark("ExampleScenario-End");
-         });    
+         });   
+         performance.mark("ExampleScenario-End"); 
          performance.measure("Draw random boxes", "ExampleScenario-Begin", "ExampleScenario-End");
     });
 });
